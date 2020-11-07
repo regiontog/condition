@@ -17,11 +17,13 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsup src --format cjs,esm --dts",
-    "valid:types": "tsc --noEmit"
+    "valid:types": "tsc --noEmit",
+    "valid:examples": "node scripts/validateExamples.mjs"
   },
   "author": "Erlend Tobiassen",
   "license": "MIT",
   "devDependencies": {
+    "@npmcli/run-script": "^1.7.5",
     "commitizen": "4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "tsup": "^3.7.1",
