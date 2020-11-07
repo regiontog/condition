@@ -1,16 +1,30 @@
 {
-  "name": "morm",
+  "name": "@okkr/morm",
   "version": "0.1.0",
   "description": "",
-  "main": "src/morm.ts",
+  "type": "commonjs",
+  "main": "dist/morm.js",
+  "module": "dist/morm.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/morm.js",
+      "default": "./dist/morm.mjs"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run build",
+    "build": "tsup src --format cjs,esm --dts"
   },
   "author": "Erlend Tobiassen",
   "license": "MIT",
   "devDependencies": {
     "commitizen": "4.2.2",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "tsup": "^3.7.1",
+    "typescript": "^4.0.5"
   },
   "config": {
     "commitizen": {

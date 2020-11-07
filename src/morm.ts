@@ -1,3 +1,5 @@
+import { sayHello } from "./yello/hello"
+
 export function reactive(a: any) {
-    console.log(a)
+    sayHello()
 }
