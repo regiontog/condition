@@ -1,0 +1,14 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@okkr/morm": "file:../.."
+  }
+}

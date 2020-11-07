@@ -1,0 +1,19 @@
+{
+  "name": "rollup-ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bundle.js",
+    "prestart": "npm run build",
+    "build": "rollup --config"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.33.1"
+  },
+  "dependencies": {
+    "@okkr/morm": "file:../.."
+  }
+}
