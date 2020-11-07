@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "tsup src --format cjs,esm --dts"
+    "build": "tsup src --format cjs,esm --dts",
+    "valid:types": "tsc --noEmit"
   },
   "author": "Erlend Tobiassen",
   "license": "MIT",
