@@ -1,14 +1,14 @@
 {
-  "name": "@okkr/morm",
+  "name": "@okkr/condition",
   "version": "0.1.0",
   "description": "",
   "type": "commonjs",
-  "main": "dist/morm.js",
-  "module": "dist/morm.mjs",
+  "main": "dist/condition.js",
+  "module": "dist/condition.mjs",
   "exports": {
     ".": {
-      "require": "./dist/morm.js",
-      "default": "./dist/morm.mjs"
+      "require": "./dist/condition.js",
+      "default": "./dist/condition.mjs"
     }
   },
   "files": [

@@ -1,5 +1,5 @@
 /* eslint-env node */
 
-import * as $ from "@okkr/morm";
+import * as $ from "@okkr/condition";
 
 console.log($);

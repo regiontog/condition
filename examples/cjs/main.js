@@ -1,3 +1,3 @@
-const $ = require("@okkr/morm");
+const $ = require("@okkr/condition");
 
 console.log($);

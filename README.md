@@ -1,19 +1,19 @@
-# morm
+# condition
 
-morm is a node library for handeling reactive state
+condition is a node library for handeling reactive state
 
 ## Installation
 
 Use the node package manager [npm](https://www.npmjs.com/) to install.
 
 ```bash
-npm i @okkr/morm
+npm i @okkr/condition
 ```
 
 ## Usage
 
 ```typescript
-import * as $ from "@okkr/morm";
+import * as $ from "@okkr/condition";
 
 console.log($);
 

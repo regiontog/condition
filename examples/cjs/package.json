@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@okkr/morm": "file:../.."
+    "@okkr/condition": "file:../.."
   }
 }
