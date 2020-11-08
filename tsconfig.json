@@ -9,6 +9,7 @@
         "noImplicitThis": true,
         "noFallthroughCasesInSwitch": true,
         "forceConsistentCasingInFileNames": true,
+        "types": [],
         "lib": [
             "es2020"
         ]
