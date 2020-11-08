@@ -18,22 +18,14 @@ module.exports = {
     },
     overrides: [
         {
-            files: ["*.test.ts"],
-            parser: "@typescript-eslint/parser",
+            files: ["*.mjs"],
             parserOptions: {
-                tsconfigRootDir: ".",
-                project: ["./tsconfig.json"],
+                sourceType: "module",
             },
-            plugins: ["@typescript-eslint", "jest"],
-            extends: [
-                "plugin:@typescript-eslint/eslint-recommended",
-                "plugin:@typescript-eslint/recommended",
-                "plugin:@typescript-eslint/recommended-requiring-type-checking",
-                "plugin:import/typescript",
-                "plugin:jest/recommended",
-            ],
+        },
+        {
+            files: ["config/**", "scripts/**", "examples/**"],
             env: {
-                "jest/globals": true,
                 node: true,
             },
         },
@@ -53,14 +45,11 @@ module.exports = {
             ],
         },
         {
-            files: ["*.mjs"],
-            parserOptions: {
-                sourceType: "module",
-            },
-        },
-        {
-            files: ["config/**", "scripts/**", "examples/**"],
+            files: ["*.test.ts"],
+            plugins: ["jest"],
+            extends: ["plugin:jest/recommended"],
             env: {
+                "jest/globals": true,
                 node: true,
             },
         },

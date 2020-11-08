@@ -21,9 +21,10 @@
     "valid": "concurrently \"npm:valid:test\" \"npm:valid:types\" \"npm:valid:examples\" \"npm:valid:lint\"",
     "valid:types": "tsc --noEmit",
     "valid:test": "jest --config config/jest.config.js",
+    "prevalid:examples": "npm run build",
     "valid:examples": "node scripts/validateExamples.mjs",
     "valid:lint": "eslint . --max-warnings=0",
-    "valid:lint:fix": "npm run valid:lint -- --fix"
+    "lint:fix": "npm run valid:lint -- --fix"
   },
   "author": "Erlend Tobiassen",
   "license": "MIT",
