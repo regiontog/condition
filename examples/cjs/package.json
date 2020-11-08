@@ -7,7 +7,7 @@
     "start": "node main.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@okkr/morm": "file:../.."
   }
