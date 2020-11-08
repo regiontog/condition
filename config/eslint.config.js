@@ -30,7 +30,7 @@ module.exports = {
             },
         },
         {
-            files: ["*.ts"],
+            files: ["src/**/*.ts"],
             parser: "@typescript-eslint/parser",
             parserOptions: {
                 tsconfigRootDir: ".",
@@ -45,7 +45,7 @@ module.exports = {
             ],
         },
         {
-            files: ["*.test.ts"],
+            files: ["src/**/*.test.ts"],
             plugins: ["jest"],
             extends: ["plugin:jest/recommended"],
             env: {

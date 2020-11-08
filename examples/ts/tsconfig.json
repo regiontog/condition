@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "strict": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2020"
+    ]
+  },
+  "include": [
+    "main.ts"
+  ]
+}
