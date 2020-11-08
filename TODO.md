@@ -1,0 +1,7 @@
+* JEST TESTS
+* README.md
+* TYPESCRIPT EXAMPLE
+* PUSH AS TEMPLATE
+* BUILD THING(reactive .xlsl like)
+* CI?
+* CD?
