@@ -1,31 +1,39 @@
-import { readdir } from "fs/promises"
-import { join } from "path"
-import runScript from "@npmcli/run-script"
+// eslint-disable-next-line import/no-unresolved
+import { readdir } from "fs/promises";
 
-const dirs = await readdir("examples")
+import { join } from "path";
+import runScript from "@npmcli/run-script";
 
-await Promise.all(dirs.map(async dir => {
-    await runScript({
-        event: "install",
-        cmd: "npm install",
-        path: join("examples", dir),
-        banner: true,
-        stdio: "ignore",
-    })
+const main = async () => {
+    const dirs = await readdir("examples");
 
-    await runScript({
-        event: "prestart",
-        path: join("examples", dir),
-        banner: true,
-        stdio: "ignore",
-    })
-}))
+    await Promise.all(
+        dirs.map(async (dir) => {
+            await runScript({
+                event: "install",
+                cmd: "npm install",
+                path: join("examples", dir),
+                banner: true,
+                stdio: "ignore",
+            });
 
-for (const dir of dirs) {
-    await runScript({
-        event: "start",
-        path: join("examples", dir),
-        banner: true,
-        stdio: "inherit",
-    })
-}
+            await runScript({
+                event: "prestart",
+                path: join("examples", dir),
+                banner: true,
+                stdio: "ignore",
+            });
+        })
+    );
+
+    for (const dir of dirs) {
+        await runScript({
+            event: "start",
+            path: join("examples", dir),
+            banner: true,
+            stdio: "inherit",
+        });
+    }
+};
+
+main();

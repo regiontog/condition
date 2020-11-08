@@ -10,7 +10,7 @@
         "noFallthroughCasesInSwitch": true,
         "forceConsistentCasingInFileNames": true,
         "lib": [
-            "esnext"
+            "es2020"
         ]
     },
     "include": [

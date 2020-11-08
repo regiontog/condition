@@ -1,0 +1,9 @@
+{
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "bundle.js"
+    ]
+}

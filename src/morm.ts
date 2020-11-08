@@ -1,5 +1,5 @@
-import { sayHello } from "./yello/hello"
+import { sayHello } from "./yello/hello";
 
-export function reactive(a: any) {
-    sayHello()
-}
+export const reactive = (): void => {
+    sayHello();
+};

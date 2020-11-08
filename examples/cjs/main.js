@@ -1,5 +1,3 @@
-const { reactive } = require("@okkr/morm")
+const $ = require("@okkr/morm");
 
-reactive({
-    test: "testing"
-})
+console.log($);
